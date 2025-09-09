@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- Declares the document type as HTML5 -->
+
+<html lang="en">
+<!-- Root element of the HTML document with language set to English -->
+
+<head>
+    <!-- Head section containing metadata and styling -->
+
+    <meta charset="UTF-8">
+    <!-- Sets character encoding to UTF-8 for proper text rendering -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures responsive design on mobile devices by controlling viewport scaling -->
+
+    <title>Audio Video Tag Demo</title>
+    <!-- Title of the webpage displayed in the browser tab -->
+
+    <style>
+        video {
+            width: 400px;
+        }
+        /* Sets the width of the video player to 400 pixels */
+    </style>
+</head>
+
+<body>
+    <!-- Body section containing visible content of the webpage -->
+
+    <video controls autoplay loop src="./Videos/ocean_video.mp4">
+        Your Browser doesn't support videos.
+        <!-- Fallback text displayed if the browser doesn't support the <video> tag -->
+    </video>
+    <!-- 
+        Embeds a video player with the following attributes:
+        - controls: Displays playback controls (play, pause, volume, etc.)
+        - autoplay: Starts playing the video automatically when the page loads
+        - loop: Repeats the video indefinitely
+        - src: Specifies the path to the video file
+    -->
+
+    
+</body>
+</html>
