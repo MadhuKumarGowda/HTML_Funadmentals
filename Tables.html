@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- Declares the document type as HTML5 -->
+
+<html lang="en">
+<!-- Root element of the HTML document with language set to English -->
+
+<head>
+    <!-- Head section containing metadata and styling -->
+
+    <meta charset="UTF-8">
+    <!-- Sets character encoding to UTF-8 for proper text rendering -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures responsive design on mobile devices by controlling viewport scaling -->
+
+    <title>Table Tag Demo</title>
+    <!-- Title of the webpage displayed in the browser tab -->
+
+    <style>
+        /* Applies styling to table, table cells (td), and headers (th) */
+        table, td, th {
+            border: 1px solid grey;         /* Adds a grey border around table elements */
+            border-collapse: collapse;      /* Merges adjacent borders into a single border */
+            padding: 4px;                   /* Adds padding inside cells for spacing */
+        }
+
+        tfoot {
+            text-align: left;               /* Aligns footer text to the left */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Body section containing the visible content of the webpage -->
+
+    <table>
+        <!-- Defines a table element -->
+
+        <thead>
+            <!-- Table header section -->
+
+            <tr>
+                <th colspan="2">Expenses</th>
+                <!-- Header row with a single cell spanning two columns -->
+            </tr>
+
+            <tr>
+                <th>Category</th>
+                <th>Amount</th>
+                <!-- Column headers for category and amount -->
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- Table body section containing data rows -->
+
+            <tr>
+                <td>Marketing</td>
+                <td>$100</td>
+                <!-- Row for Marketing expense -->
+            </tr>
+
+            <tr>
+                <td>Accounting</td>
+                <td>$200</td>
+                <!-- Row for Accounting expense -->
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <!-- Table footer section -->
+
+            <tr>
+                <th>Total</th>
+                <th>$300</th>
+                <!-- Footer row showing the total amount -->
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
