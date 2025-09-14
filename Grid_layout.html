@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- Declares the document type and version of HTML -->
+<html lang="en">
+<!-- Sets the language of the document to English -->
+
+<head>
+    <!-- Specifies character encoding for the document -->
+    <meta charset="UTF-8">
+    
+    <!-- Ensures proper rendering and touch zooming on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Sets the title of the web page shown in the browser tab -->
+    <title>Grid Layout Demo</title>
+</head>
+
+<style>
+    /* Styles for the grid container */
+    .container {
+        display: grid; /* Enables CSS Grid layout */
+        grid-template-rows: repeat(3, 100px); /* Defines 3 rows, each 100px tall */
+        grid-template-columns: repeat(2, 200px); /* Defines 2 columns, each 200px wide */
+        border: 3px solid lightgrey; /* Adds a light grey border around the container */
+        justify-items: center;
+        align-items: center;
+    }
+
+    .container1{
+        display: grid;
+        grid-template: 100px auto 100px / 30fr 70fr;
+        row-gap: 2rem;
+        column-gap: 0.2rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .box{
+        width: 5rem;
+        height: 5rem;
+        background-color: gold;
+        
+    }
+</style>
+
+<body>
+    <!-- Grid container element -->
+    <!-- NOTE: Typo in class name "container" should be "container" to apply styles correctly -->
+    <div class="container">
+        <!-- Grid items can be added here -->
+         <div class="box">box-one</div>
+         <div class="box">box-two</div>
+         <div class="box">box-three</div>
+         <div class="box">box-four</div>
+    </div>
+    <div class="container1">
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+        <div class="box">box 4</div>
+    </div>
+</body>
+</html>
